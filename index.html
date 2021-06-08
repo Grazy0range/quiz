@@ -84,16 +84,46 @@
 
                 <div class="action__left">
                     <div class="progress_bar">
-                        <div class="step"></div>
-                        <div class="step"></div>
-                        <div class="step"></div>
-                        <div class="step"></div>
-                        <div class="step"></div>
-                        <div class="step"></div>
+                        <div class="step" style="left: 0;">
+                            <img src="img/1_full.png" alt="1">
+                        </div>
+                        <div class="step" style="left: 120px;">
+                            <img src="img/2.png" alt="2">
+                            <div class="step_check">
+                                <img src="img/2_full.png" alt="2_full">
+                            </div>
+                        </div>
+                        <div class="step" style="left: 240px;">
+                            <img src="img/3.png" alt="3">
+                            <div class="step_check">
+                                <img src="img/3_full.png" alt="3_full">
+                            </div>
+                        </div>
+                        <div class="step" style="left: 360px;">
+                            <img src="img/4.png" alt="4">
+                            <div class="step_check">
+                                <img src="img/4_full.png" alt="4_full">
+                            </div>
+                        </div>
+                        <div class="step" style="left: 480px;">
+                            <img src="img/5.png" alt="5">
+                            <div class="step_check">
+                                <img src="img/5_full.png" alt="5_full">
+                            </div>
+                        </div>
+                        <div class="step" style="left: 600px;">
+                            <img src="img/6.png" alt="6">
+                            <div class="step_check">
+                                <img src="img/6_full.png" alt="6_full">
+                            </div>
+                        </div>
+                        <div class="step">
+                            <img src="img/pipe_end.png" alt="6">
+                        </div>
                     </div>
                     <div class="form-outer">
                         <form action="#">
-                            <div class="page">
+                            <div class="page slidepage">
                                 <div class="title">
                                     <h3 class="title__head">У Вас есть источник воды на участке?</h3>
                                     <p class="title__text">Мы делаем комплекс работ по водоснабжению — от бурения
@@ -128,13 +158,13 @@
                                         <div class="label">Центральный водопровод</div>
                                     </div>
                                 </div>
-                                <div class="field" style="border: none; margin-bottom: 32px">
-                                    <button class="field_button"><span>Следующий вопрос</span><img
-                                            src="img/left_row.png" alt="next_row"></button>
+                                <div class="field nextBtn" style="border: none; margin-bottom: 32px">
+                                    <a class="field_button"><span>Следующий вопрос</span><img src="img/left_row.png"
+                                            alt="next_row"></a>
                                 </div>
                             </div>
 
-                            <div class="page">
+                            <div class="page slidepage">
                                 <div class="title">
                                     <h3 class="title__head">Укажите, что нужно подключить к водоснабжению</h3>
                                     <p class="title__text">При подключении дополнительных строений от скважины
@@ -177,10 +207,126 @@
                                     </div>
                                 </div>
                                 <div class="field" style="border: none; margin-bottom: 32px; width: 90%;">
-                                    <button class="field_button back"
+                                    <a class="field_button back back-2"
                                         style="display: inline-block; margin-right: 20px;"><img src="img/left_row.png"
-                                            alt="next_row"></button>
-                                    <button class="field_button next" style="display: inline-block;"><span>Следующий
+                                            alt="next_row"></a>
+                                    <a class="field_button next next-2" style="display: inline-block;"><span>Следующий
+                                            вопрос</span><img src="img/left_row.png" alt="back"></a>
+                                </div>
+                            </div>
+
+                            <div class="page slidepage">
+                                <div class="title">
+                                    <h3 class="title__head">Планируете пользоваться водой зимой?</h3>
+                                    <p class="title__text">Подключение водоснабжения для сезонного проживания стоит
+                                        дешевле: нет необходимости углублять трубу, делать теплоизоляцию и укладывать
+                                        греющий кабель</p>
+                                </div>
+                                <div class="field check" style="display: block;">
+                                    <div class="field__radio">
+                                        <input type="radio">
+                                        <div class="label">Да, пользоваться круглаый год</div>
+                                    </div>
+                                </div>
+                                <div class="field check" style="display: block;">
+                                    <div class="field__radio">
+                                        <input type="radio">
+                                        <div class="label">Нет, зимой пользоваться не буду</div>
+                                    </div>
+                                </div>
+                                <div class="field check" style="display: block;">
+                                    <div class="field__radio">
+                                        <input type="radio">
+                                        <div class="label">Нужна консльтация</div>
+                                    </div>
+                                </div>
+                                <div class="field" style="border: none; margin-bottom: 32px; width: 90%;">
+                                    <a class="field_button back back-3"
+                                        style="display: inline-block; margin-right: 20px;"><img src="img/left_row.png"
+                                            alt="next_row"></a>
+                                    <a class="field_button next next-3" style="display: inline-block;"><span>Следующий
+                                            вопрос</span><img src="img/left_row.png" alt="back"></a>
+                                </div>
+                            </div>
+
+                            <div class="page slidepage">
+                                <div class="title">
+                                    <h3 class="title__head">Потребуется разводка водопровода по дому?</h3>
+                                    <p class="title__text">Разводка водопровода по дому включает монтаж труб и
+                                        подключение точек водоразбора</p>
+                                </div>
+                                <div class="field check" style="display: block;">
+                                    <div class="field__radio">
+                                        <input type="radio">
+                                        <div class="label">Да, необходимо развести трубы</div>
+                                    </div>
+                                </div>
+                                <div class="field check" style="display: block;">
+                                    <div class="field__radio">
+                                        <input type="radio">
+                                        <div class="label">Нет, разводка не нужна</div>
+                                    </div>
+                                </div>
+                                <div class="field check" style="display: block;">
+                                    <div class="field__radio">
+                                        <input type="radio">
+                                        <div class="label">Не знаю / нужна консультация</div>
+                                    </div>
+                                </div>
+                                <div class="field" style="border: none; margin-bottom: 32px; width: 90%;">
+                                    <a class="field_button back back-4"
+                                        style="display: inline-block; margin-right: 20px;"><img src="img/left_row.png"
+                                            alt="next_row"></a>
+                                    <a class="field_button next next-4" style="display: inline-block;"><span>Следующий
+                                            вопрос</span><img src="img/left_row.png" alt="back"></a>
+                                </div>
+                            </div>
+
+                            <div class="page slidepage">
+                                <div class="title">
+                                    <h3 class="title__head">Укажите, какие ещё услуги необходимы</h3>
+                                    <p class="title__text">Подключаем сантехнические приборы и устанавливаем системы
+                                        водоочистки</p>
+                                </div>
+                                <div class="field">
+                                    <img src="img/first_first.jpg" alt="first_first" class="field__img">
+                                    <div class="field__radio">
+                                        <input type="radio">
+                                        <div class="label">Подключение сантехприборов</div>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <img src="img/first_second.jpg" alt="first_second" class="field__img">
+                                    <div class="field__radio">
+                                        <input type="radio">
+                                        <div class="label">Установка системы водоочистки</div>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <img src="img/first__third.jpg" alt="first__third" class="field__img">
+                                    <div class="field__radio">
+                                        <input type="radio">
+                                        <div class="label">Система контроля протечки воды</div>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <img src="img/last_fourth.png" alt="first_fourth" class="field__img">
+                                    <div class="field__radio">
+                                        <input type="radio">
+                                        <div class="label">Другое</div>
+                                    </div>
+                                </div>
+                                <div class="field check" style="display: block; width: 83%; margin-left: 83px;">
+                                    <div class="field__radio">
+                                        <input type="radio">
+                                        <div class="label">Нет, разводка не нужна</div>
+                                    </div>
+                                </div>
+                                <div class="field" style="border: none; margin-bottom: 32px; width: 90%;">
+                                    <a class="field_button back back-5"
+                                        style="display: inline-block; margin-right: 20px;"><img src="img/left_row.png"
+                                            alt="next_row"></a>
+                                    <button class="field_button submit" style="display: inline-block;"><span>Следующий
                                             вопрос</span><img src="img/left_row.png" alt="back"></button>
                                 </div>
                             </div>

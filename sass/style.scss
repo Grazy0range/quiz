@@ -337,6 +337,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 86px;
 
 
         .action__left {
@@ -345,9 +346,79 @@
             border-radius: 0px 10px 10px 0px;
             margin-right: 41px;
             display: flex;
-            justify-content: center;
             align-items: center;
+            flex-direction: column;
             padding: 130px 0 32px 0;
+            position: relative;
+
+            .progress_bar {
+                display: flex;
+                width: 815px;
+                position: absolute;
+                top: 30px;
+                left: 0;
+
+                .step {
+                    position: absolute;
+
+                    img {
+                        display: inline-block;
+                    }
+
+
+
+                    &::before,
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        height: 22px;
+                        width: 120px;
+                        background: linear-gradient(180deg, #CFD5D9 0%, #F7F7F7 32.91%, #4D4D4D 71.97%, #CFCFCF 100%);
+                        top: -46px;
+                        left: 0;
+                    }
+
+                    &::after {
+                        background: linear-gradient(180deg, #8CBADF 0%, #C5E5FF 32.91%, #0B69B3 71.97%, #84C6FB 100%);
+                        transform: scaleX(0);
+                        animation: animate 0.3s linear forwards;
+                        transform-origin: left;
+                    }
+
+                    @keyframes animate {
+                        100% {
+                            transform: scaleX(1);
+                        }
+                    }
+
+                    &:first-child {
+                        &::before {
+                            background: linear-gradient(180deg, #8CBADF 0%, #C5E5FF 32.91%, #0B69B3 71.97%, #84C6FB 100%);
+                        }
+                    }
+
+                    &:last-child {
+                        left: 720px;
+                        top: -109px;
+
+                        &:after {
+                            content: none;
+                        }
+
+                        &::before {
+                            content: none;
+                        }
+                    }
+
+
+
+                    .step_check {
+                        position: absolute;
+                        top: 0;
+                        display: none;
+                    }
+                }
+            }
 
             .form-outer {
                 width: 100%;
@@ -357,14 +428,15 @@
                 form {
                     display: flex;
                     align-items: center;
-                    width: 400%;
+                    width: 600%;
                     margin-left: 10%;
 
                     .page {
                         background: #FFFFFF;
                         border-radius: 8px;
-                        width: 20%;
-                        margin-right: 15%;
+                        width: 14%;
+                        margin-right: 3%;
+                        transition: margin-left 0.3s ease-in-out;
 
                         .title {
                             padding: 28px 0 0 32px;

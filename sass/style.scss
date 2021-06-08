@@ -313,6 +313,7 @@
 
 .quiz {
     background: white;
+    text-align: center;
 
 
     .quiz__content {
@@ -334,6 +335,8 @@
 
     .quiz__action {
         display: flex;
+        justify-content: center;
+        align-items: center;
 
 
         .action__left {
@@ -347,14 +350,21 @@
             padding: 130px 0 32px 0;
 
             .form-outer {
+                width: 100%;
+                overflow: hidden;
+
+
                 form {
                     display: flex;
+                    align-items: center;
+                    width: 400%;
+                    margin-left: 10%;
 
                     .page {
                         background: #FFFFFF;
                         border-radius: 8px;
-                        width: 77%;
-                        margin: 0 auto;
+                        width: 20%;
+                        margin-right: 15%;
 
                         .title {
                             padding: 28px 0 0 32px;

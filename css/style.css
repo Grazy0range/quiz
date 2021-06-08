@@ -255,6 +255,7 @@
 
 .quiz {
   background: white;
+  text-align: center;
 }
 .quiz .quiz__content {
   margin: 85px 0 0 135px;
@@ -272,6 +273,8 @@
 }
 .quiz .quiz__action {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .quiz .quiz__action .action__left {
   width: 898px;
@@ -283,14 +286,21 @@
   align-items: center;
   padding: 130px 0 32px 0;
 }
+.quiz .quiz__action .action__left .form-outer {
+  width: 100%;
+  overflow: hidden;
+}
 .quiz .quiz__action .action__left .form-outer form {
   display: flex;
+  align-items: center;
+  width: 400%;
+  margin-left: 10%;
 }
 .quiz .quiz__action .action__left .form-outer form .page {
   background: #FFFFFF;
   border-radius: 8px;
-  width: 77%;
-  margin: 0 auto;
+  width: 20%;
+  margin-right: 15%;
 }
 .quiz .quiz__action .action__left .form-outer form .page .title {
   padding: 28px 0 0 32px;

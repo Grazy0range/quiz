@@ -25,34 +25,48 @@ let current = 1;
  firstNextBtn.addEventListener('click', function(){
     slidePage.style.marginLeft = '-17%';
     progressCheck[current - 1].style.display = 'block';
-
+    progressBar[current - 0].classList.add('active');
     current += 1;
  });
  nextBtnSec.addEventListener('click', function(){
     slidePage.style.marginLeft = '-34%';
     progressCheck[current - 1].style.display = 'block';
-    progressBar[current - 1].classList.add('.active');
+    progressBar[current - 0].classList.add('active');
     current += 1;
  });
  nextBtnThir.addEventListener('click', function(){
     slidePage.style.marginLeft = '-51%';
     progressCheck[current - 1].style.display = 'block';
+    progressBar[current - 0].classList.add('active');
     current += 1;
  });
  nextBtnFour.addEventListener('click', function(){
     slidePage.style.marginLeft = '-68%';
     progressCheck[current - 1].style.display = 'block';
+    progressBar[current - 0].classList.add('active');
     current += 1;
  });
  prevBtnSec.addEventListener('click', function(){
     slidePage.style.marginLeft = '0';
+    progressCheck[current - 2].style.display = 'none';
+    progressBar[current - 1].classList.remove('active');
+    current -= 1;
  });
  prevBtnThir.addEventListener('click', function(){
     slidePage.style.marginLeft = '-17%';
+    progressCheck[current - 2].style.display = 'none';
+    progressBar[current - 1].classList.remove('active');
+    current -= 1;
  });
  prevBtnFour.addEventListener('click', function(){
     slidePage.style.marginLeft = '-34%';
+    progressCheck[current - 2].style.display = 'none';
+    progressBar[current - 1].classList.remove('active');
+    current -= 1;
  });
  prevBtnFif.addEventListener('click', function(){
     slidePage.style.marginLeft = '-51%';
+    progressCheck[current - 2].style.display = 'none';
+    progressBar[current - 1].classList.remove('active');
+    current -= 1;
  });

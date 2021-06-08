@@ -378,20 +378,27 @@
                         left: 0;
                     }
 
-                    &::after {
-                        background: linear-gradient(180deg, #8CBADF 0%, #C5E5FF 32.91%, #0B69B3 71.97%, #84C6FB 100%);
-                        transform: scaleX(0);
-                        animation: animate 0.3s linear forwards;
-                        transform-origin: left;
-                    }
+                    // &::after {
+                    //     background: linear-gradient(180deg, #8CBADF 0%, #C5E5FF 32.91%, #0B69B3 71.97%, #84C6FB 100%);
+                    //     transform: scaleX(0);
+                    //     animation: animate 0.3s linear forwards;
+                    //     transform-origin: left;
+                    // }
 
-                    @keyframes animate {
-                        100% {
-                            transform: scaleX(1);
-                        }
-                    }
+                    // @keyframes animate {
+                    //     100% {
+                    //         transform: scaleX(1);
+                    //     }
+                    // }
 
                     &:first-child {
+                        &::after {
+                            background: linear-gradient(180deg, #8CBADF 0%, #C5E5FF 32.91%, #0B69B3 71.97%, #84C6FB 100%);
+                            transform: scaleX(0);
+                            animation: animate 0.3s linear forwards;
+                            transform-origin: left;
+                        }
+
                         &::before {
                             background: linear-gradient(180deg, #8CBADF 0%, #C5E5FF 32.91%, #0B69B3 71.97%, #84C6FB 100%);
                         }
@@ -418,6 +425,21 @@
                         display: none;
                     }
                 }
+
+                .active {
+                    &::after {
+                        background: linear-gradient(180deg, #8CBADF 0%, #C5E5FF 32.91%, #0B69B3 71.97%, #84C6FB 100%);
+                        transform: scaleX(0);
+                        animation: animate 0.3s linear forwards;
+                        transform-origin: left;
+                    }
+
+                    @keyframes animate {
+                        100% {
+                            transform: scaleX(1);
+                        }
+                    }
+                }
             }
 
             .form-outer {
@@ -439,7 +461,7 @@
                         transition: margin-left 0.3s ease-in-out;
 
                         .title {
-                            padding: 28px 0 0 32px;
+                            padding: 28px 0 0 60px;
                             width: 620px;
 
                             .title__head {

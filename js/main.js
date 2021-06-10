@@ -1,6 +1,7 @@
 $(document).ready(function (){
-    $('.accordeon__item_triger').click(function(){
+    $('.accordeon__item_triger').click(function(event){
     $(this).next('.accordeon__item_content').slideToggle();
+    $(this).next('.down_caret').css({'transform' : 'rotate(180deg)'});;
     });
       });
 
@@ -14,6 +15,7 @@ $(document).ready(function (){
  const prevBtnFour = document.querySelector('.back-4');
  const nextBtnFour = document.querySelector('.next-4');
  const prevBtnFif = document.querySelector('.back-5');
+ const nextBtnFive = document.querySelector('.next-5');
  const progressCheck = document.querySelectorAll('.step .step_check');
  const progressBar = document.querySelectorAll('.step');
 
@@ -46,6 +48,12 @@ let current = 1;
     progressBar[current - 0].classList.add('active');
     current += 1;
  });
+ nextBtnFive.addEventListener('click', function(){
+   slidePage.style.marginLeft = '-85%';
+   progressCheck[current - 1].style.display = 'block';
+   progressBar[current - 0].classList.add('active');
+   current += 1;
+});
  prevBtnSec.addEventListener('click', function(){
     slidePage.style.marginLeft = '0';
     progressCheck[current - 2].style.display = 'none';
@@ -70,3 +78,22 @@ let current = 1;
     progressBar[current - 1].classList.remove('active');
     current -= 1;
  });
+
+
+ let pop_up = document.getElementById("popup");
+ let pop_upTogle = document.getElementById("call__phraze__link");
+ let pop_upClose = document.getElementById("close_button");
+
+ pop_upTogle.onclick = function () {
+     pop_up.style.display = "block";
+ };
+
+ pop_upClose.onclick = function () {
+     pop_up.style.display = "none";
+ };
+
+ window.onclick = function (event) {
+     if (event.target == popup_body) {
+         pop_up.style.display = "none";
+     }
+ };

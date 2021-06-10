@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>Document</title>
 </head>
 
@@ -29,7 +30,8 @@
                         <p class="link_phone">+7 (499) 433-09-12</p>
                         <div class="link_call_phraze">
                             <img src="img/green_icon.svg" alt="green-icon" class="call__phraze__img">
-                            <a href="#" class="call__phraze__link">Заказать быструю консультацию</a>
+                            <a href="#" class="call__phraze__link" id="call__phraze__link">Заказать быструю
+                                консультацию</a>
                         </div>
                     </div>
                 </div>
@@ -52,19 +54,24 @@
                     <ul class="gift_list">
                         <li class="gift_item">
                             <div class="accordeon__item_triger">
-                                <img src="img/triger_filter.png" alt="filter"><span>Фильтр очистки для воды</span>
+                                <img src="img/triger_filter.png" alt="filter"><span>Фильтр очистки для воды</span><img
+                                    src="img/down_caret.png" alt="down_caret" class="down_caret">
                             </div>
-                            <div class="accordeon__item_content">Защищает трубы, сантехнику и бытовые приборы от
-                                загрязнений и повреждений механическими частицами.
-                                При установке на магистраль холодной воды, улучшает качество питьевой воды.</div>
+                            <div class="accordeon__item_content"><span> Защищает трубы, сантехнику и бытовые приборы от
+                                    загрязнений и повреждений механическими частицами.
+                                    При установке на магистраль холодной воды, улучшает качество питьевой воды.</span>
+                            </div>
                         </li>
                         <li class="gift_item">
                             <div class="accordeon__item_triger">
-                                <img src="img/triger_map.png" alt="filter"><span>Карта глубин в вашем районе</span>
+                                <img src="img/triger_map.png" alt="filter"><span>Карта глубин в вашем районе</span><img
+                                    src="img/down_caret.png" alt="down_caret" class="down_caret">
                             </div>
-                            <div class="accordeon__item_content">Карта показывает глубину водоносного слоя в вашем
-                                районе.
-                                По этим данным вы сможете посчитать примерную стоимость бурения скважины</div>
+                            <div class="accordeon__item_content"><span> Карта показывает глубину водоносного слоя в
+                                    вашем
+                                    районе.
+                                    По этим данным вы сможете посчитать примерную стоимость бурения скважины</span>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -84,34 +91,34 @@
 
                 <div class="action__left">
                     <div class="progress_bar">
-                        <div class="step" style="left: 0;">
+                        <div class="step">
                             <img src="img/1_full.png" alt="1">
                         </div>
-                        <div class="step" style="left: 120px;">
+                        <div class="step">
                             <img src="img/2.png" alt="2">
                             <div class="step_check">
                                 <img src="img/2_full.png" alt="2_full">
                             </div>
                         </div>
-                        <div class="step" style="left: 240px;">
+                        <div class="step">
                             <img src="img/3.png" alt="3">
                             <div class="step_check">
                                 <img src="img/3_full.png" alt="3_full">
                             </div>
                         </div>
-                        <div class="step" style="left: 360px;">
+                        <div class="step">
                             <img src="img/4.png" alt="4">
                             <div class="step_check">
                                 <img src="img/4_full.png" alt="4_full">
                             </div>
                         </div>
-                        <div class="step" style="left: 480px;">
+                        <div class="step">
                             <img src="img/5.png" alt="5">
                             <div class="step_check">
                                 <img src="img/5_full.png" alt="5_full">
                             </div>
                         </div>
-                        <div class="step" style="left: 600px;">
+                        <div class="step">
                             <img src="img/6.png" alt="6">
                             <div class="step_check">
                                 <img src="img/6_full.png" alt="6_full">
@@ -316,7 +323,7 @@
                                         <div class="label">Другое</div>
                                     </div>
                                 </div>
-                                <div class="field check" style="display: block; width: 83%; margin-left: 83px;">
+                                <div class="field check last_slide" style="display: block;">
                                     <div class="field__radio">
                                         <input type="radio">
                                         <div class="label">Нет, разводка не нужна</div>
@@ -326,10 +333,50 @@
                                     <a class="field_button back back-5"
                                         style="display: inline-block; margin-right: 20px;"><img src="img/left_row.png"
                                             alt="next_row"></a>
-                                    <button class="field_button submit" style="display: inline-block;"><span>Следующий
-                                            вопрос</span><img src="img/left_row.png" alt="back"></button>
+                                    <a class="field_button next-5" style="display: inline-block;"><span>Следующий
+                                            вопрос</span><img src="img/left_row.png" alt="back"></a>
                                 </div>
                             </div>
+
+
+                            <div class="page slidepage last_page">
+                                <!-- <img src="img/phone.png" alt="phone"> -->
+                                <div class="title">
+                                    <p class="title__text"><span> Отлично!</span> До результата остался последний шаг
+                                    </p>
+                                    <h3 class="title__head">Куда вам удобнее его прислать?</h3>
+                                </div>
+                                <div class="field check" style="display: block;">
+                                    <div class="field__radio">
+                                        <input type="radio">
+                                        <div class="label">Пришлите в <span> WhatsApp</span></div>
+                                    </div>
+                                </div>
+                                <div class="field check" style="display: block;">
+                                    <div class="field__radio">
+                                        <input type="radio">
+                                        <div class="label">Пришлите в <span>СМС</span></div>
+                                    </div>
+                                </div>
+                                <div class="field check" style="display: block;">
+                                    <div class="field__radio">
+                                        <input type="radio">
+                                        <div class="label">Перезвоните, у меня остались вопросы</div>
+                                    </div>
+                                </div>
+                                <div class="field check" style="display: block;">
+                                    <div class="field__radio input_form">
+                                        <input type="text" placeholder="+7(___) ___-__-__">
+                                        <p class="text__info">+ дарим дополнительную скидку 5% от нашей компании</p>
+                                    </div>
+                                </div>
+                                <div class="field" style="border: none; margin-bottom: 32px; width: 90%;">
+                                    <button class="field_button submit" style="display: inline-block;"
+                                        type="submit"><span>Получить
+                                            расчет</span></button>
+                                </div>
+                            </div>
+
 
                         </form>
                     </div>
@@ -366,6 +413,26 @@
             </div>
         </footer>
 
+
+        <div class="popup" id="popup">
+            <div class="popup__body" id="popup_body">
+                <div class="popup__content">
+                    <a href="#popup" class="popup__close" id="close_button"><img src="img/close_big.png"
+                            alt="close"></a>
+                    <div class="popup__title">Заказ на бесплатную консултацию</div>
+                    <form action="#" method="POST">
+                        <input type="text" placeholder="Как вас зовут?">
+                        <input type="text" placeholder="Ваш номер телефона">
+                        <input type="submit" value="Оформить в один клик">
+                    </form>
+                    <div class="popup_rules">
+                        <p class="rules_text">Нажимая на кнопку, вы принимаете <a href="#" class="rules_link"> условия
+                                передачи данных</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 

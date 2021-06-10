@@ -97,3 +97,25 @@ let current = 1;
          pop_up.style.display = "none";
      }
  };
+
+
+
+
+ let mobile_popup = document.getElementById("mobile__popup");
+ let mobile_pop_upTogle = document.getElementById("active_popup");
+ let mobile_pop_upClose = document.getElementById("continue_button");
+
+ mobile_pop_upTogle.onclick = function () {
+   mobile_popup.style.display = "block";
+ };
+
+ mobile_pop_upClose.onclick = function () {
+   mobile_popup.style.display = "none";
+ };
+
+ window.onclick = function (event) {
+     if (event.target == mobile_popup_body) {
+      mobile_popup.style.display = "none";
+     }
+ };
+

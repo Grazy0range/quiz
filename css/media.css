@@ -498,6 +498,67 @@
   .quiz .quiz__action .action__left .form-outer form .page .check:nth-child(odd) {
     margin-left: 32px;
   }
+  .quiz .quiz__action .action__left .form-outer form .last_page {
+    position: relative;
+    z-index: 2;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page img {
+    position: absolute;
+    left: -255px;
+    z-index: -1;
+    display: inline-block;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .title {
+    text-align: left;
+    padding-left: 32px;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .title .title__text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .title .title__text span {
+    color: #FF1D0F;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .check {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #202020;
+    border: none;
+    z-index: 10;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .check span {
+    font-weight: 700;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .check .field__radio {
+    border: none;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .check .input_form {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .check .input_form .text__info {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #000000;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .check .input_form input {
+    background: #FFFFFF;
+    border: 1px solid #4A4060;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 12px 20px;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .field button {
+    margin-left: -295px;
+    padding: 27px 32px;
+    margin-top: 6px;
+  }
   .quiz .quiz__action .action__right {
     position: relative;
     right: 0;
@@ -1218,6 +1279,67 @@
   }
   .quiz .quiz__action .action__left .form-outer form .page .check:nth-child(odd) {
     margin-left: 32px;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page {
+    position: relative;
+    z-index: 2;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page img {
+    position: absolute;
+    left: -255px;
+    z-index: -1;
+    display: inline-block;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .title {
+    text-align: left;
+    padding-left: 32px;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .title .title__text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .title .title__text span {
+    color: #FF1D0F;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .check {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #202020;
+    border: none;
+    z-index: 10;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .check span {
+    font-weight: 700;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .check .field__radio {
+    border: none;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .check .input_form {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .check .input_form .text__info {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #000000;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .check .input_form input {
+    background: #FFFFFF;
+    border: 1px solid #4A4060;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 12px 20px;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .field button {
+    margin-left: -295px;
+    padding: 27px 32px;
+    margin-top: 6px;
   }
   .quiz .quiz__action .action__right {
     position: relative;
@@ -1947,6 +2069,67 @@
   .quiz .quiz__action .action__left .form-outer form .page .check:nth-child(odd) {
     margin-left: 32px;
   }
+  .quiz .quiz__action .action__left .form-outer form .last_page {
+    position: relative;
+    z-index: 2;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page img {
+    position: absolute;
+    left: -255px;
+    z-index: -1;
+    display: inline-block;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .title {
+    text-align: left;
+    padding-left: 32px;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .title .title__text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .title .title__text span {
+    color: #FF1D0F;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .check {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #202020;
+    border: none;
+    z-index: 10;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .check span {
+    font-weight: 700;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .check .field__radio {
+    border: none;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .check .input_form {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .check .input_form .text__info {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #000000;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .check .input_form input {
+    background: #FFFFFF;
+    border: 1px solid #4A4060;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 12px 20px;
+  }
+  .quiz .quiz__action .action__left .form-outer form .last_page .field button {
+    margin-left: -295px;
+    padding: 27px 32px;
+    margin-top: 6px;
+  }
   .quiz .quiz__action .action__right {
     position: relative;
     right: 0;
@@ -2037,6 +2220,16 @@
     font-size: 12px;
     line-height: 130%;
     color: #393E43;
+  }
+
+  .mobile__footer {
+    display: block;
+    position: relative;
+    bottom: 0;
+  }
+  .mobile__footer .button img {
+    width: 100%;
+    height: 100px;
   }
 
   .popup {
@@ -2839,6 +3032,16 @@
     font-size: 12px;
     line-height: 130%;
     color: #393E43;
+  }
+
+  .mobile__footer {
+    display: block;
+    position: relative;
+    bottom: 0;
+  }
+  .mobile__footer .button img {
+    width: 100%;
+    height: 100px;
   }
 
   .popup {
@@ -3656,6 +3859,16 @@
     font-size: 12px;
     line-height: 130%;
     color: #393E43;
+  }
+
+  .mobile__footer {
+    display: block;
+    position: relative;
+    bottom: 0;
+  }
+  .mobile__footer .button img {
+    width: 100%;
+    height: 100px;
   }
 
   .popup {

@@ -269,7 +269,6 @@
 }
 .quiz .quiz__action {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-top: 86px;
 }
